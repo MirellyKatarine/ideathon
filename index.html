@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix - Página Inicial</title>
+    <link rel="icon" type="image/x-icon" href="./imagens/logo.jpg">
+    <title>Cine Bacurau - Página Inicial</title>
     <style>
         body {
             background-color: #000;
@@ -123,6 +124,53 @@
             color: #fff;
             font-size: 14px;
         }
+
+        .contact-form {
+            background-color: #333;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .contact-form h3 {
+            font-size: 24px;
+            color: #e50914;
+            margin-bottom: 20px;
+        }
+        .contact-form label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: #fff;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .contact-form button[type="submit"] {
+            background-color: #fff;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .contact-form button[type="submit"]:hover {
+            background-color: #fff;
+            color: #e50914;
+        }
     </style>
 </head>
 <body>
@@ -137,7 +185,7 @@
     <div class="feature">
         <img src="https://a.imagem.app/bP5dON.png" alt="Feature 1">
         <div>
-            <p>Aproveite a Netflix em seu smartphone, tablet, smart TV, notebook ou qualquer dispositivo conectado à Internet.</p>
+            <p>Aproveite a Cine Bacurau em seu smartphone, tablet, smart TV, notebook ou qualquer dispositivo conectado à Internet.</p>
         </div>
     </div>
     <div class="feature">
@@ -154,7 +202,7 @@
     </div>
     <div class="feature">
         <div>
-            <p>Aproveite a Netflix em seu smartphone, tablet, smart TV, notebook ou qualquer dispositivo conectado à Internet.</p>
+            <p>Aproveite a Cine Bacurau em seu smartphone, tablet, smart TV, notebook ou qualquer dispositivo conectado à Internet.</p>
         </div>
         <img src="./imagens/image-assistaemvariosaparelhos.png" alt="Feature 4">
     </div>
@@ -210,6 +258,20 @@
     <img src="https://i.ibb.co/5vTNNMT/image.png" alt="Footer Logo">
     <p class="copyright">© 2023 Todos os direitos reservados.</p>
 </div>
-
+<div class="contact-form">
+    <h3>Entre em Contato Com Nossa Consultoria</h3>
+    <form action="processar_formulario.php" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</div>
 </body>
 </html>

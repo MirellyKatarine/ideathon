@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagens/logo.jpg">
     <title>Home - Streaming</title>
     <style>
         body {
@@ -63,52 +64,7 @@
         .movie-list .movie {
             margin-right: 20px;
         }
-        .contact-form {
-            background-color: #333;
-            padding: 40px;
-            margin-top: 40px;
-            text-align: left;
-        }
-        .contact-form h3 {
-            font-size: 24px;
-            color: #e50914;
-            margin-bottom: 20px;
-        }
-        .contact-form label {
-            display: block;
-            font-size: 18px;
-            margin-bottom: 8px;
-            color: #fff;
-        }
-        .contact-form input[type="text"],
-        .contact-form input[type="email"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-            background-color: #555;
-            color: #fff;
-        }
-        .contact-form textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-        .contact-form button[type="submit"] {
-            background-color: #fff;
-            color: #000000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .contact-form button[type="submit"]:hover {
-            background-color: #fff;
-            color: #e50914;
-        }
+       
     </style>
 </head>
 <body>
@@ -181,21 +137,6 @@
                 <!-- Adicione mais filmes aqui -->
             </div>
         </div>
-    </div>
-    <div class="contact-form">
-        <h3>Entre em Contato</h3>
-        <form action="processar_formulario.php" method="POST">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
     </div>
 </body>
 </html>
