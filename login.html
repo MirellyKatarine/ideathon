@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Streaming</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 300px; /* Aumente o tamanho da imagem conforme necessário */
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #ffffff; /* Red color */
+            color: #000000;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #fff; /* White color */
+            color: #e50914;
+        }
+        .signup-link {
+            margin-top: 10px;
+        }
+        .signup-link a {
+            text-decoration: none;
+            color: #e50914;
+        }
+        /* Center the buttons */
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html"><img src="https://i.ibb.co/5vTNNMT/image.png" alt="image" border="0"></a>
+    </div>
+    <div class="container">
+        <div class="logo">Embarque em uma viagem pernambucana</div>
+        <form action="#" method="post">
+            <div class="center">
+                <input type="text" name="username" placeholder="Login" required><br>
+                <input type="password" name="password" placeholder="Senha" required><br>
+                <input type="submit" value="Entrar" onclick="irParaCatalogo()">
+
+<script>
+function irParaCatalogo() {
+  window.location.href = "catalogo.html";
+}
+</script>
+            </div>
+        </form>
+        <div class="signup-link">
+            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Streaming</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: left;
+            padding: 20px 20px;
+        }
+        .header img {
+            width: 200px; /* Tamanho da logo no canto superior esquerdo */
+            margin-top: -10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .genre-section {
+            margin-bottom: 30px;
+        }
+        .genre-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .movie {
+            display: inline-block;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .movie img {
+            width: 150px; /* Tamanho das imagens dos filmes */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .family-section,
+        .regional-section {
+            margin-top: 40px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .movie-list {
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .movie-list .movie {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/5vTNNMT/image.png" alt="Logo" border="0"></a>
+    </div>
+    <div class="container">
+        <!-- Seção de Gênero 1 -->
+        <div class="genre-section">
+            <h2>Filmes de Ação</h2>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="imagens/img1.jpeg" alt="Filme 1" border="0">
+                    <p>Nome do Filme 1</p>
+                </div>
+                <div class="movie">
+                    <img src="imagens/img2.jpg" alt="Filme 2" border="0">
+                    <p>Nome do Filme 2</p>
+                </div>
+                <!-- Adicione mais filmes aqui -->
+            </div>
+        </div>
+
+        <!-- Seção de Gênero 2 -->
+        <div class="genre-section">
+            <h2>Filmes de Comédia</h2>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="imagens/img3.jpeg" alt="Filme 3" border="0">
+                    <p>Nome do Filme 3</p>
+                </div>
+                <div class="movie">
+                    <img src="imagens/img4.jpg" alt="Filme 4" border="0">
+                    <p>Nome do Filme 4</p>
+                </div>
+                <!-- Adicione mais filmes aqui -->
+            </div>
+        </div>
+
+        <!-- Seção "Para a Família" -->
+        <div class="family-section">
+            <h2>Para a Família</h2>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="URL_DO_FILME5.jpg" alt="Filme 5" border="0">
+                    <p>Nome do Filme 5</p>
+                </div>
+                <div class="movie">
+                    <img src="URL_DO_FILME6.jpg" alt="Filme 6" border="0">
+                    <p>Nome do Filme 6</p>
+                </div>
+                <!-- Adicione mais filmes aqui -->
+            </div>
+        </div>
+
+        <!-- Seção "Regionais" -->
+        <div class="regional-section">
+            <h2>Regionais</h2>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="URL_DO_FILME7.jpg" alt="Filme 7" border="0">
+                    <p>Nome do Filme 7</p>
+                </div>
+                <div class="movie">
+                    <img src="URL_DO_FILME8.jpg" alt="Filme 8" border="0">
+                    <p>Nome do Filme 8</p>
+                </div>
+                <!-- Adicione mais filmes aqui -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
