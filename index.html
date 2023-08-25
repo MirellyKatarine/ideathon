@@ -54,12 +54,13 @@
         }
         .feature img {
             width: 150px;
+            height: auto; /* Torna a altura proporcional à largura */
             margin-right: 20px;
         }
         .faq {
             background-color: #333;
             padding: 40px;
-            text-align: center; /* Centraliza o texto "Perguntas Frequentes" */
+            text-align: left; /* Alinha o texto à esquerda */
         }
         .faq h3 {
             font-size: 36px; /* Aumenta o tamanho do título */
@@ -107,6 +108,21 @@
         .faq-item.open .faq-question::after {
             content: "x";
         }
+
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        .footer img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .copyright {
+            color: #fff;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -140,7 +156,7 @@
         <div>
             <p>Aproveite a Netflix em seu smartphone, tablet, smart TV, notebook ou qualquer dispositivo conectado à Internet.</p>
         </div>
-        <img src="https://a.imagem.app/bP5dON.png" alt="Feature 4">
+        <img src="./imagens/image-assistaemvariosaparelhos.png" alt="Feature 4">
     </div>
     <div class="faq">
         <!-- ... Código das perguntas frequentes ... -->
@@ -175,6 +191,7 @@
         <!-- Adicione mais perguntas frequentes aqui -->
     </div>
 
+
     <script>
         const faqItems = document.querySelectorAll(".faq-item");
 
@@ -188,5 +205,11 @@
             });
         });
     </script>
+
+<div class="footer">
+    <img src="https://i.ibb.co/5vTNNMT/image.png" alt="Footer Logo">
+    <p class="copyright">© 2023 Todos os direitos reservados.</p>
+</div>
+
 </body>
 </html>
